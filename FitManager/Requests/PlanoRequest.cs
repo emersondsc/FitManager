@@ -1,6 +1,6 @@
 ﻿namespace FitManagerAPI.Requests
 {
-    public record PlanoRequest
-    {
-    }
+    public record PlanoRequest (string Nome, decimal Preco, string Descricao, TimeSpan Duracao);
+
+
 }

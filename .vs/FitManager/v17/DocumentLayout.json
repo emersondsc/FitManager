@@ -3,77 +3,16 @@
   "WorkspaceRootPath": "C:\\temp\\FitManager03\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\temp\\FitManager03\\FitManager\\Migrations\\20240909201940_Creation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FitManager\\Migrations\\20240909201940_Creation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\modelos\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\modelos\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\data\\fitmanagerapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\data\\fitmanagerapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\clienteendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\clienteendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\modelos\\plano.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\modelos\\plano.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\modelos\\pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\modelos\\pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\modelos\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\modelos\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\modelos\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\modelos\\despesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\temp\\FitManager - Copia\\FitManager\\Migrations\\20240906224021_IDsIntParaGUID.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\despesaendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\despesaendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\funcionarioendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\funcionarioendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\temp\\FitManager - Copia\\FitManager\\Migrations\\20240906223256_IDsIntParaGUID.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\temp\\FitManager - Copia\\FitManager\\Migrations\\20240906223010_IDsIntParaGUID.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\planoendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\planoendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\pagamentoendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\pagamentoendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\requests\\planorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\requests\\planorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\modelos\\sistemafinanceiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\modelos\\sistemafinanceiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\modelos\\relatoriofinanceiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\modelos\\relatoriofinanceiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\despesaendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\despesaendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -88,233 +27,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20240909201940_Creation.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\Migrations\\20240909201940_Creation.cs",
-              "RelativeDocumentMoniker": "FitManager\\Migrations\\20240909201940_Creation.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\Migrations\\20240909201940_Creation.cs",
-              "RelativeToolTip": "FitManager\\Migrations\\20240909201940_Creation.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T20:19:40.931Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\appsettings.json",
-              "RelativeDocumentMoniker": "FitManager\\appsettings.json",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\appsettings.json",
-              "RelativeToolTip": "FitManager\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-09T20:09:05.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "20240906224021_IDsIntParaGUID.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager - Copia\\FitManager\\Migrations\\20240906224021_IDsIntParaGUID.cs",
-              "RelativeDocumentMoniker": "..\\FitManager - Copia\\FitManager\\Migrations\\20240906224021_IDsIntParaGUID.cs",
-              "ToolTip": "C:\\temp\\FitManager - Copia\\FitManager\\Migrations\\20240906224021_IDsIntParaGUID.cs",
-              "RelativeToolTip": "..\\FitManager - Copia\\FitManager\\Migrations\\20240906224021_IDsIntParaGUID.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:40:22.023Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "20240906223256_IDsIntParaGUID.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager - Copia\\FitManager\\Migrations\\20240906223256_IDsIntParaGUID.cs",
-              "RelativeDocumentMoniker": "..\\FitManager - Copia\\FitManager\\Migrations\\20240906223256_IDsIntParaGUID.cs",
-              "ToolTip": "C:\\temp\\FitManager - Copia\\FitManager\\Migrations\\20240906223256_IDsIntParaGUID.cs",
-              "RelativeToolTip": "..\\FitManager - Copia\\FitManager\\Migrations\\20240906223256_IDsIntParaGUID.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAowAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:32:56.313Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FitManagerAPIContext.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\Data\\FitManagerAPIContext.cs",
-              "RelativeDocumentMoniker": "FitManager\\Data\\FitManagerAPIContext.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\Data\\FitManagerAPIContext.cs",
-              "RelativeToolTip": "FitManager\\Data\\FitManagerAPIContext.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAADwvw0AAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:30:37.357Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20240906223010_IDsIntParaGUID.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager - Copia\\FitManager\\Migrations\\20240906223010_IDsIntParaGUID.cs",
-              "RelativeDocumentMoniker": "..\\FitManager - Copia\\FitManager\\Migrations\\20240906223010_IDsIntParaGUID.cs",
-              "ToolTip": "C:\\temp\\FitManager - Copia\\FitManager\\Migrations\\20240906223010_IDsIntParaGUID.cs",
-              "RelativeToolTip": "..\\FitManager - Copia\\FitManager\\Migrations\\20240906223010_IDsIntParaGUID.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:30:10.806Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FuncionarioEndpoints.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\FuncionarioEndpoints.cs",
-              "RelativeDocumentMoniker": "FitManager\\FuncionarioEndpoints.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\FuncionarioEndpoints.cs",
-              "RelativeToolTip": "FitManager\\FuncionarioEndpoints.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAgwDMAAABbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:29:06.291Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DespesaEndpoints.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\DespesaEndpoints.cs",
-              "RelativeDocumentMoniker": "FitManager\\DespesaEndpoints.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\DespesaEndpoints.cs",
-              "RelativeToolTip": "FitManager\\DespesaEndpoints.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAgwDgAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:20:44.565Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "ClienteEndpoints.cs",
               "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\ClienteEndpoints.cs",
               "RelativeDocumentMoniker": "FitManager\\ClienteEndpoints.cs",
               "ToolTip": "C:\\temp\\FitManager03\\FitManager\\ClienteEndpoints.cs",
               "RelativeToolTip": "FitManager\\ClienteEndpoints.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAgwDAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:20:08.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PagamentoEndpoints.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\PagamentoEndpoints.cs",
-              "RelativeDocumentMoniker": "FitManager\\PagamentoEndpoints.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\PagamentoEndpoints.cs",
-              "RelativeToolTip": "FitManager\\PagamentoEndpoints.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAgwDgAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:19:38.071Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SistemaFinanceiro.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\Modelos\\SistemaFinanceiro.cs",
-              "RelativeDocumentMoniker": "FitManager\\Modelos\\SistemaFinanceiro.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\Modelos\\SistemaFinanceiro.cs",
-              "RelativeToolTip": "FitManager\\Modelos\\SistemaFinanceiro.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:16:46.841Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RelatorioFinanceiro.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\Modelos\\RelatorioFinanceiro.cs",
-              "RelativeDocumentMoniker": "FitManager\\Modelos\\RelatorioFinanceiro.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\Modelos\\RelatorioFinanceiro.cs",
-              "RelativeToolTip": "FitManager\\Modelos\\RelatorioFinanceiro.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:16:39.516Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Pagamento.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\Modelos\\Pagamento.cs",
-              "RelativeDocumentMoniker": "FitManager\\Modelos\\Pagamento.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\Modelos\\Pagamento.cs",
-              "RelativeToolTip": "FitManager\\Modelos\\Pagamento.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:16:32.125Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Funcionario.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\Modelos\\Funcionario.cs",
-              "RelativeDocumentMoniker": "FitManager\\Modelos\\Funcionario.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\Modelos\\Funcionario.cs",
-              "RelativeToolTip": "FitManager\\Modelos\\Funcionario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:16:21.251Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Despesa.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\Modelos\\Despesa.cs",
-              "RelativeDocumentMoniker": "FitManager\\Modelos\\Despesa.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\Modelos\\Despesa.cs",
-              "RelativeToolTip": "FitManager\\Modelos\\Despesa.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:16:14.885Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\Modelos\\Cliente.cs",
-              "RelativeDocumentMoniker": "FitManager\\Modelos\\Cliente.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\Modelos\\Cliente.cs",
-              "RelativeToolTip": "FitManager\\Modelos\\Cliente.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:15:42.542Z",
+              "WhenOpened": "2024-09-09T23:04:16.941Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Plano.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\Modelos\\Plano.cs",
-              "RelativeDocumentMoniker": "FitManager\\Modelos\\Plano.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\Modelos\\Plano.cs",
-              "RelativeToolTip": "FitManager\\Modelos\\Plano.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T22:10:04.215Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PlanoRequest.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\Requests\\PlanoRequest.cs",
-              "RelativeDocumentMoniker": "FitManager\\Requests\\PlanoRequest.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\Requests\\PlanoRequest.cs",
-              "RelativeToolTip": "FitManager\\Requests\\PlanoRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T21:55:01.085Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "PlanoEndpoints.cs",
               "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\PlanoEndpoints.cs",
               "RelativeDocumentMoniker": "FitManager\\PlanoEndpoints.cs",
               "ToolTip": "C:\\temp\\FitManager03\\FitManager\\PlanoEndpoints.cs",
               "RelativeToolTip": "FitManager\\PlanoEndpoints.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAABIAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCAAAABoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T21:10:13.457Z"
+              "WhenOpened": "2024-09-09T23:03:12.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DespesaEndpoints.cs",
+              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\DespesaEndpoints.cs",
+              "RelativeDocumentMoniker": "FitManager\\DespesaEndpoints.cs",
+              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\DespesaEndpoints.cs",
+              "RelativeToolTip": "FitManager\\DespesaEndpoints.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwCEAAABuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T23:02:45.243Z",
+              "EditorCaption": ""
             }
           ]
         }

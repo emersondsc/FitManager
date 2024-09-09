@@ -3,11 +3,12 @@ using FitManagerAPI.Data;
 using FitManagerAPI.Modelos;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.OpenApi;
+using FitManagerAPI.Requests;
 namespace FitManagerAPI;
 
 public static class PlanoEndpoints
 {
-    public static void MapPlanoEndpoints (this IEndpointRouteBuilder routes)
+    public static void MapPlanoEndpoints(this IEndpointRouteBuilder routes)
     {
         var group = routes.MapGroup("/api/Plano").WithTags(nameof(Plano));
 
@@ -29,8 +30,9 @@ public static class PlanoEndpoints
         .WithName("GetPlanoById")
         .WithOpenApi();
 
-        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (Guid planoid, Plano plano, FitManagerAPIContext db) =>
+        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (Guid planoid, PlanoRequest planoRequest, FitManagerAPIContext db) =>
         {
+            var plano = new Plano(planoRequest.Nome, planoRequest.Preco, planoRequest.Descricao, planoRequest.Duracao);
             var affected = await db.Plano
                 .Where(model => model.PlanoId == planoid)
                 .ExecuteUpdateAsync(setters => setters
@@ -45,15 +47,27 @@ public static class PlanoEndpoints
         .WithName("UpdatePlano")
         .WithOpenApi();
 
-        group.MapPost("/", async (Plano plano, FitManagerAPIContext db) =>
+        group.MapPost("/", async (PlanoRequest planoRequest, FitManagerAPIContext db) =>
         {
-           
+            var plano = new Plano(planoRequest.Nome, planoRequest.Preco, planoRequest.Descricao, planoRequest.Duracao);
+
             db.Plano.Add(plano);
             await db.SaveChangesAsync();
-            return TypedResults.Created($"/api/Plano/{plano.PlanoId}",plano);
+            return TypedResults.Created($"/api/Plano/{plano.PlanoId}", plano);
         })
         .WithName("CreatePlano")
         .WithOpenApi();
+
+        //group.MapPost("/", async (Plano plano, FitManagerAPIContext db) =>
+        //{
+
+
+        //    db.Plano.Add(plano);
+        //    await db.SaveChangesAsync();
+        //    return TypedResults.Created($"/api/Plano/{plano.PlanoId}", plano);
+        //})
+        //.WithName("CreatePlano")
+        //.WithOpenApi();
 
         group.MapDelete("/{id}", async Task<Results<Ok, NotFound>> (Guid planoid, FitManagerAPIContext db) =>
         {

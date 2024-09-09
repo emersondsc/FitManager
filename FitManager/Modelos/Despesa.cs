@@ -13,7 +13,7 @@
             Descricao = descricao;
             Valor = valor;
             Categoria = categoria;
-            Data = DateTime.Now;
+            Data = DateTime.Now.ToUniversalTime();
         }
     }
 }

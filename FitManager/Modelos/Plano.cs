@@ -7,5 +7,14 @@
         public decimal Preco { get; set; }
         public string Descricao { get; set; }
         public TimeSpan Duracao { get; set; }
+
+        public Plano( string nome, decimal preco, string descricao, TimeSpan duracao)
+        {
+           
+            Nome = nome;
+            Preco = preco;
+            Descricao = descricao;
+            Duracao = duracao;
+        }
     }
 }

@@ -8,11 +8,12 @@
         public decimal Salario { get; set; }
         public string HorarioTrabalho { get; set; }
 
-        //public Funcionario(string nome, string cargo, decimal salario)
-        //{
-        //    Nome = nome;
-        //    Cargo = cargo;
-        //    Salario = salario;
-        //}
+        public Funcionario(string nome, string cargo, decimal salario, string horarioTrabalho)
+        {
+            Nome = nome;
+            Cargo = cargo;
+            Salario = salario;
+            HorarioTrabalho = horarioTrabalho;
+        }
     }
 }

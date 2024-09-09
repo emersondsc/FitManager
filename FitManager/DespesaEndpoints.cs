@@ -3,6 +3,8 @@ using FitManagerAPI.Data;
 using FitManagerAPI.Modelos;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.OpenApi;
+using FitManagerAPI.Requests;
+using System.Drawing;
 namespace FitManagerAPI;
 
 public static class DespesaEndpoints
@@ -29,8 +31,9 @@ public static class DespesaEndpoints
         .WithName("GetDespesaById")
         .WithOpenApi();
 
-        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (Guid despesaid, Despesa despesa, FitManagerAPIContext db) =>
+        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (Guid despesaid, DespesaRequest despesaRequest, FitManagerAPIContext db) =>
         {
+            var despesa = new Despesa(despesaRequest.descricao, despesaRequest.valor, despesaRequest.categoria);
             var affected = await db.Despesa
                 .Where(model => model.DespesaId == despesaid)
                 .ExecuteUpdateAsync(setters => setters
@@ -45,8 +48,9 @@ public static class DespesaEndpoints
         .WithName("UpdateDespesa")
         .WithOpenApi();
 
-        group.MapPost("/", async (Despesa despesa, FitManagerAPIContext db) =>
+        group.MapPost("/", async (DespesaRequest despesaRequest, FitManagerAPIContext db) =>
         {
+            var despesa = new Despesa(despesaRequest.descricao, despesaRequest.valor, despesaRequest.categoria);
             db.Despesa.Add(despesa);
             await db.SaveChangesAsync();
             return TypedResults.Created($"/api/Despesa/{despesa.DespesaId}",despesa);

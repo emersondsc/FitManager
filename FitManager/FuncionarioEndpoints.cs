@@ -3,6 +3,7 @@ using FitManagerAPI.Data;
 using FitManagerAPI.Modelos;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.OpenApi;
+using FitManagerAPI.Requests;
 namespace FitManagerAPI;
 
 public static class FuncionarioEndpoints
@@ -29,8 +30,9 @@ public static class FuncionarioEndpoints
         .WithName("GetFuncionarioById")
         .WithOpenApi();
 
-        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (Guid funcionarioid, Funcionario funcionario, FitManagerAPIContext db) =>
+        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (Guid funcionarioid, FuncionarioRequest funcionarioRequest, FitManagerAPIContext db) =>
         {
+            var funcionario = new Funcionario(funcionarioRequest.nome, funcionarioRequest.cargo, funcionarioRequest.salario, funcionarioRequest.horarioTrabalho);
             var affected = await db.Funcionario
                 .Where(model => model.FuncionarioId == funcionarioid)
                 .ExecuteUpdateAsync(setters => setters
@@ -45,8 +47,9 @@ public static class FuncionarioEndpoints
         .WithName("UpdateFuncionario")
         .WithOpenApi();
 
-        group.MapPost("/", async (Funcionario funcionario, FitManagerAPIContext db) =>
+        group.MapPost("/", async (FuncionarioRequest funcionarioRequest, FitManagerAPIContext db) =>
         {
+            var funcionario = new Funcionario(funcionarioRequest.nome, funcionarioRequest.cargo, funcionarioRequest.salario, funcionarioRequest.horarioTrabalho);
             db.Funcionario.Add(funcionario);
             await db.SaveChangesAsync();
             return TypedResults.Created($"/api/Funcionario/{funcionario.FuncionarioId}",funcionario);
