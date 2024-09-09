@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/UzzvHrrhvA=",
+  "dgSpecHash": "n63U1cncJJA=",
   "success": true,
-  "projectFilePath": "C:\\temp\\FitManager - Copia\\FitManager\\FitManagerAPI.csproj",
+  "projectFilePath": "C:\\temp\\FitManager03\\FitManager\\FitManagerAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emerson\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\emerson\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

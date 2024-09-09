@@ -24,11 +24,10 @@ namespace FitManagerAPI.Migrations
 
             modelBuilder.Entity("FitManagerAPI.Modelos.Cliente", b =>
                 {
-                    b.Property<int>("ClienteId")
+                    b.Property<Guid>("ClienteId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ClienteId"));
+                        .HasColumnType("uuid")
+                        .HasDefaultValueSql("gen_random_uuid()");
 
                     b.Property<bool>("Ativo")
                         .HasColumnType("boolean");
@@ -41,8 +40,8 @@ namespace FitManagerAPI.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("PlanoAtualPlanoId")
-                        .HasColumnType("integer");
+                    b.Property<Guid>("PlanoAtualPlanoId")
+                        .HasColumnType("uuid");
 
                     b.Property<string>("Telefone")
                         .IsRequired()
@@ -57,11 +56,10 @@ namespace FitManagerAPI.Migrations
 
             modelBuilder.Entity("FitManagerAPI.Modelos.Despesa", b =>
                 {
-                    b.Property<int>("DespesaId")
+                    b.Property<Guid>("DespesaId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("DespesaId"));
+                        .HasColumnType("uuid")
+                        .HasDefaultValueSql("gen_random_uuid()");
 
                     b.Property<string>("Categoria")
                         .IsRequired()
@@ -84,11 +82,10 @@ namespace FitManagerAPI.Migrations
 
             modelBuilder.Entity("FitManagerAPI.Modelos.Funcionario", b =>
                 {
-                    b.Property<int>("FuncionarioId")
+                    b.Property<Guid>("FuncionarioId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("FuncionarioId"));
+                        .HasColumnType("uuid")
+                        .HasDefaultValueSql("gen_random_uuid()");
 
                     b.Property<string>("Cargo")
                         .IsRequired()
@@ -112,14 +109,13 @@ namespace FitManagerAPI.Migrations
 
             modelBuilder.Entity("FitManagerAPI.Modelos.Pagamento", b =>
                 {
-                    b.Property<int>("PagamentoId")
+                    b.Property<Guid>("PagamentoId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("uuid")
+                        .HasDefaultValueSql("gen_random_uuid()");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("PagamentoId"));
-
-                    b.Property<int>("ClienteId")
-                        .HasColumnType("integer");
+                    b.Property<Guid>("ClienteId")
+                        .HasColumnType("uuid");
 
                     b.Property<bool>("Confirmado")
                         .HasColumnType("boolean");
@@ -143,11 +139,10 @@ namespace FitManagerAPI.Migrations
 
             modelBuilder.Entity("FitManagerAPI.Modelos.Plano", b =>
                 {
-                    b.Property<int>("PlanoId")
+                    b.Property<Guid>("PlanoId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("PlanoId"));
+                        .HasColumnType("uuid")
+                        .HasDefaultValueSql("gen_random_uuid()");
 
                     b.Property<string>("Descricao")
                         .IsRequired()

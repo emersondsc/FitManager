@@ -18,7 +18,7 @@ public static class DespesaEndpoints
         .WithName("GetAllDespesas")
         .WithOpenApi();
 
-        group.MapGet("/{id}", async Task<Results<Ok<Despesa>, NotFound>> (int despesaid, FitManagerAPIContext db) =>
+        group.MapGet("/{id}", async Task<Results<Ok<Despesa>, NotFound>> (Guid despesaid, FitManagerAPIContext db) =>
         {
             return await db.Despesa.AsNoTracking()
                 .FirstOrDefaultAsync(model => model.DespesaId == despesaid)
@@ -29,7 +29,7 @@ public static class DespesaEndpoints
         .WithName("GetDespesaById")
         .WithOpenApi();
 
-        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (int despesaid, Despesa despesa, FitManagerAPIContext db) =>
+        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (Guid despesaid, Despesa despesa, FitManagerAPIContext db) =>
         {
             var affected = await db.Despesa
                 .Where(model => model.DespesaId == despesaid)
@@ -54,7 +54,7 @@ public static class DespesaEndpoints
         .WithName("CreateDespesa")
         .WithOpenApi();
 
-        group.MapDelete("/{id}", async Task<Results<Ok, NotFound>> (int despesaid, FitManagerAPIContext db) =>
+        group.MapDelete("/{id}", async Task<Results<Ok, NotFound>> (Guid despesaid, FitManagerAPIContext db) =>
         {
             var affected = await db.Despesa
                 .Where(model => model.DespesaId == despesaid)

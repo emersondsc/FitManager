@@ -1,23 +1,51 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 namespace FitManagerAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class ClienteCreation : Migration
+    public partial class Creation : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Despesa",
+                columns: table => new
+                {
+                    DespesaId = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "gen_random_uuid()"),
+                    Descricao = table.Column<string>(type: "text", nullable: false),
+                    Data = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    Valor = table.Column<decimal>(type: "numeric", nullable: false),
+                    Categoria = table.Column<string>(type: "text", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Despesa", x => x.DespesaId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Funcionario",
+                columns: table => new
+                {
+                    FuncionarioId = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "gen_random_uuid()"),
+                    Nome = table.Column<string>(type: "text", nullable: false),
+                    Cargo = table.Column<string>(type: "text", nullable: false),
+                    Salario = table.Column<decimal>(type: "numeric", nullable: false),
+                    HorarioTrabalho = table.Column<string>(type: "text", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Funcionario", x => x.FuncionarioId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Plano",
                 columns: table => new
                 {
-                    PlanoId = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    PlanoId = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "gen_random_uuid()"),
                     Nome = table.Column<string>(type: "text", nullable: false),
                     Preco = table.Column<decimal>(type: "numeric", nullable: false),
                     Descricao = table.Column<string>(type: "text", nullable: false),
@@ -32,12 +60,11 @@ namespace FitManagerAPI.Migrations
                 name: "Cliente",
                 columns: table => new
                 {
-                    ClienteId = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    ClienteId = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "gen_random_uuid()"),
                     Nome = table.Column<string>(type: "text", nullable: false),
                     Email = table.Column<string>(type: "text", nullable: false),
                     Telefone = table.Column<string>(type: "text", nullable: false),
-                    PlanoAtualPlanoId = table.Column<int>(type: "integer", nullable: false),
+                    PlanoAtualPlanoId = table.Column<Guid>(type: "uuid", nullable: false),
                     Ativo = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
@@ -55,9 +82,8 @@ namespace FitManagerAPI.Migrations
                 name: "Pagamento",
                 columns: table => new
                 {
-                    PagamentoId = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    ClienteId = table.Column<int>(type: "integer", nullable: false),
+                    PagamentoId = table.Column<Guid>(type: "uuid", nullable: false, defaultValueSql: "gen_random_uuid()"),
+                    ClienteId = table.Column<Guid>(type: "uuid", nullable: false),
                     DataPagamento = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     ValorPago = table.Column<decimal>(type: "numeric", nullable: false),
                     MetodoPagamento = table.Column<string>(type: "text", nullable: false),
@@ -88,6 +114,12 @@ namespace FitManagerAPI.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Despesa");
+
+            migrationBuilder.DropTable(
+                name: "Funcionario");
+
             migrationBuilder.DropTable(
                 name: "Pagamento");
 

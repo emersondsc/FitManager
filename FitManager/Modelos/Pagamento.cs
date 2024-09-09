@@ -2,7 +2,7 @@
 {
     public class Pagamento
     {
-        public int PagamentoId { get; set; }
+        public Guid PagamentoId { get; set; }
         public Cliente Cliente { get; set; }
         public DateTime DataPagamento { get; set; }
         public decimal ValorPago { get; set; }

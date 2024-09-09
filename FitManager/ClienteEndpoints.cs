@@ -18,7 +18,7 @@ public static class ClienteEndpoints
         .WithName("GetAllClientes")
         .WithOpenApi();
 
-        group.MapGet("/{id}", async Task<Results<Ok<Cliente>, NotFound>> (int clienteid, FitManagerAPIContext db) =>
+        group.MapGet("/{id}", async Task<Results<Ok<Cliente>, NotFound>> (Guid clienteid, FitManagerAPIContext db) =>
         {
             return await db.Cliente.AsNoTracking()
                 .FirstOrDefaultAsync(model => model.ClienteId == clienteid)
@@ -29,7 +29,7 @@ public static class ClienteEndpoints
         .WithName("GetClienteById")
         .WithOpenApi();
 
-        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (int clienteid, Cliente cliente, FitManagerAPIContext db) =>
+        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (Guid clienteid, Cliente cliente, FitManagerAPIContext db) =>
         {
             var affected = await db.Cliente
                 .Where(model => model.ClienteId == clienteid)
@@ -54,7 +54,7 @@ public static class ClienteEndpoints
         .WithName("CreateCliente")
         .WithOpenApi();
 
-        group.MapDelete("/{id}", async Task<Results<Ok, NotFound>> (int clienteid, FitManagerAPIContext db) =>
+        group.MapDelete("/{id}", async Task<Results<Ok, NotFound>> (Guid clienteid, FitManagerAPIContext db) =>
         {
             var affected = await db.Cliente
                 .Where(model => model.ClienteId == clienteid)

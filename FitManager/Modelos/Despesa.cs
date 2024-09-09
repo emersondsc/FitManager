@@ -2,7 +2,7 @@
 {
     public class Despesa
     {
-        public int DespesaId { get; set; }
+        public Guid DespesaId { get; set; }
         public string Descricao { get; set; }
         public DateTime Data { get; set; }
         public decimal Valor { get; set; }

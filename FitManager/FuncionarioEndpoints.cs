@@ -18,7 +18,7 @@ public static class FuncionarioEndpoints
         .WithName("GetAllFuncionarios")
         .WithOpenApi();
 
-        group.MapGet("/{id}", async Task<Results<Ok<Funcionario>, NotFound>> (int funcionarioid, FitManagerAPIContext db) =>
+        group.MapGet("/{id}", async Task<Results<Ok<Funcionario>, NotFound>> (Guid funcionarioid, FitManagerAPIContext db) =>
         {
             return await db.Funcionario.AsNoTracking()
                 .FirstOrDefaultAsync(model => model.FuncionarioId == funcionarioid)
@@ -29,7 +29,7 @@ public static class FuncionarioEndpoints
         .WithName("GetFuncionarioById")
         .WithOpenApi();
 
-        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (int funcionarioid, Funcionario funcionario, FitManagerAPIContext db) =>
+        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (Guid funcionarioid, Funcionario funcionario, FitManagerAPIContext db) =>
         {
             var affected = await db.Funcionario
                 .Where(model => model.FuncionarioId == funcionarioid)
@@ -54,7 +54,7 @@ public static class FuncionarioEndpoints
         .WithName("CreateFuncionario")
         .WithOpenApi();
 
-        group.MapDelete("/{id}", async Task<Results<Ok, NotFound>> (int funcionarioid, FitManagerAPIContext db) =>
+        group.MapDelete("/{id}", async Task<Results<Ok, NotFound>> (Guid funcionarioid, FitManagerAPIContext db) =>
         {
             var affected = await db.Funcionario
                 .Where(model => model.FuncionarioId == funcionarioid)

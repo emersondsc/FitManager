@@ -18,7 +18,7 @@ public static class PagamentoEndpoints
         .WithName("GetAllPagamentos")
         .WithOpenApi();
 
-        group.MapGet("/{id}", async Task<Results<Ok<Pagamento>, NotFound>> (int pagamentoid, FitManagerAPIContext db) =>
+        group.MapGet("/{id}", async Task<Results<Ok<Pagamento>, NotFound>> (Guid pagamentoid, FitManagerAPIContext db) =>
         {
             return await db.Pagamento.AsNoTracking()
                 .FirstOrDefaultAsync(model => model.PagamentoId == pagamentoid)
@@ -29,7 +29,7 @@ public static class PagamentoEndpoints
         .WithName("GetPagamentoById")
         .WithOpenApi();
 
-        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (int pagamentoid, Pagamento pagamento, FitManagerAPIContext db) =>
+        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (Guid pagamentoid, Pagamento pagamento, FitManagerAPIContext db) =>
         {
             var affected = await db.Pagamento
                 .Where(model => model.PagamentoId == pagamentoid)
@@ -54,7 +54,7 @@ public static class PagamentoEndpoints
         .WithName("CreatePagamento")
         .WithOpenApi();
 
-        group.MapDelete("/{id}", async Task<Results<Ok, NotFound>> (int pagamentoid, FitManagerAPIContext db) =>
+        group.MapDelete("/{id}", async Task<Results<Ok, NotFound>> (Guid pagamentoid, FitManagerAPIContext db) =>
         {
             var affected = await db.Pagamento
                 .Where(model => model.PagamentoId == pagamentoid)

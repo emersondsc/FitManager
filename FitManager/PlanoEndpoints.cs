@@ -18,7 +18,7 @@ public static class PlanoEndpoints
         .WithName("GetAllPlanos")
         .WithOpenApi();
 
-        group.MapGet("/{id}", async Task<Results<Ok<Plano>, NotFound>> (int planoid, FitManagerAPIContext db) =>
+        group.MapGet("/{id}", async Task<Results<Ok<Plano>, NotFound>> (Guid planoid, FitManagerAPIContext db) =>
         {
             return await db.Plano.AsNoTracking()
                 .FirstOrDefaultAsync(model => model.PlanoId == planoid)
@@ -29,7 +29,7 @@ public static class PlanoEndpoints
         .WithName("GetPlanoById")
         .WithOpenApi();
 
-        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (int planoid, Plano plano, FitManagerAPIContext db) =>
+        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (Guid planoid, Plano plano, FitManagerAPIContext db) =>
         {
             var affected = await db.Plano
                 .Where(model => model.PlanoId == planoid)
@@ -47,6 +47,7 @@ public static class PlanoEndpoints
 
         group.MapPost("/", async (Plano plano, FitManagerAPIContext db) =>
         {
+           
             db.Plano.Add(plano);
             await db.SaveChangesAsync();
             return TypedResults.Created($"/api/Plano/{plano.PlanoId}",plano);
@@ -54,7 +55,7 @@ public static class PlanoEndpoints
         .WithName("CreatePlano")
         .WithOpenApi();
 
-        group.MapDelete("/{id}", async Task<Results<Ok, NotFound>> (int planoid, FitManagerAPIContext db) =>
+        group.MapDelete("/{id}", async Task<Results<Ok, NotFound>> (Guid planoid, FitManagerAPIContext db) =>
         {
             var affected = await db.Plano
                 .Where(model => model.PlanoId == planoid)
