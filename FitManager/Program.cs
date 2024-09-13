@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using FitManagerAPI.Data;
 using FitManagerAPI;
+using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<FitManagerAPIContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("FitManagerAPIContext") ?? throw new InvalidOperationException("Connection string 'FitManagerAPIContext' not found.")));
@@ -30,6 +31,5 @@ app.MapPagamentoEndpoints();
 app.MapDespesaEndpoints();
 
 app.MapFuncionarioEndpoints();
-
 
 app.Run();

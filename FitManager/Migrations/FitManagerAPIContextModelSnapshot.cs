@@ -51,7 +51,7 @@ namespace FitManagerAPI.Migrations
 
                     b.HasIndex("PlanoAtualPlanoId");
 
-                    b.ToTable("Cliente");
+                    b.ToTable("Cliente", (string)null);
                 });
 
             modelBuilder.Entity("FitManagerAPI.Modelos.Despesa", b =>
@@ -77,7 +77,7 @@ namespace FitManagerAPI.Migrations
 
                     b.HasKey("DespesaId");
 
-                    b.ToTable("Despesa");
+                    b.ToTable("Despesa", (string)null);
                 });
 
             modelBuilder.Entity("FitManagerAPI.Modelos.Funcionario", b =>
@@ -104,7 +104,7 @@ namespace FitManagerAPI.Migrations
 
                     b.HasKey("FuncionarioId");
 
-                    b.ToTable("Funcionario");
+                    b.ToTable("Funcionario", (string)null);
                 });
 
             modelBuilder.Entity("FitManagerAPI.Modelos.Pagamento", b =>
@@ -134,7 +134,7 @@ namespace FitManagerAPI.Migrations
 
                     b.HasIndex("ClienteId");
 
-                    b.ToTable("Pagamento");
+                    b.ToTable("Pagamento", (string)null);
                 });
 
             modelBuilder.Entity("FitManagerAPI.Modelos.Plano", b =>
@@ -160,7 +160,7 @@ namespace FitManagerAPI.Migrations
 
                     b.HasKey("PlanoId");
 
-                    b.ToTable("Plano");
+                    b.ToTable("Plano", (string)null);
                 });
 
             modelBuilder.Entity("FitManagerAPI.Modelos.Cliente", b =>

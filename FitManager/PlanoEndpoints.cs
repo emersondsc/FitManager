@@ -36,7 +36,7 @@ public static class PlanoEndpoints
             var affected = await db.Plano
                 .Where(model => model.PlanoId == planoid)
                 .ExecuteUpdateAsync(setters => setters
-                    .SetProperty(m => m.PlanoId, plano.PlanoId)
+                    
                     .SetProperty(m => m.Nome, plano.Nome)
                     .SetProperty(m => m.Preco, plano.Preco)
                     .SetProperty(m => m.Descricao, plano.Descricao)

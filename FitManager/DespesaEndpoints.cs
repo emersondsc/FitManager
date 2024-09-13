@@ -37,7 +37,7 @@ public static class DespesaEndpoints
             var affected = await db.Despesa
                 .Where(model => model.DespesaId == despesaid)
                 .ExecuteUpdateAsync(setters => setters
-                    .SetProperty(m => m.DespesaId, despesa.DespesaId)
+                    
                     .SetProperty(m => m.Descricao, despesa.Descricao)
                     .SetProperty(m => m.Data, despesa.Data)
                     .SetProperty(m => m.Valor, despesa.Valor)

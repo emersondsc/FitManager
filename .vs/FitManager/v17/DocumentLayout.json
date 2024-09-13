@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\temp\\FitManager03\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\clienteendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\clienteendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\modelos\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\modelos\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\planoendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\planoendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\modelos\\pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\modelos\\pagamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\despesaendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\despesaendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\pagamentoendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\pagamentoendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|c:\\temp\\fitmanager03\\fitmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD78C3C6-6472-479D-B256-14094B89A206}|FitManager\\FitManagerAPI.csproj|solutionrelative:fitmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,46 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClienteEndpoints.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\ClienteEndpoints.cs",
-              "RelativeDocumentMoniker": "FitManager\\ClienteEndpoints.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\ClienteEndpoints.cs",
-              "RelativeToolTip": "FitManager\\ClienteEndpoints.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\Program.cs",
+              "RelativeDocumentMoniker": "FitManager\\Program.cs",
+              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\Program.cs",
+              "RelativeToolTip": "FitManager\\Program.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAlwCAAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T23:04:16.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T23:51:41.66Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlanoEndpoints.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\PlanoEndpoints.cs",
-              "RelativeDocumentMoniker": "FitManager\\PlanoEndpoints.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\PlanoEndpoints.cs",
-              "RelativeToolTip": "FitManager\\PlanoEndpoints.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCAAAABoAAAA",
+              "DocumentIndex": 0,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\Modelos\\Cliente.cs",
+              "RelativeDocumentMoniker": "FitManager\\Modelos\\Cliente.cs",
+              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\Modelos\\Cliente.cs",
+              "RelativeToolTip": "FitManager\\Modelos\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T23:03:12.759Z",
+              "WhenOpened": "2024-09-12T23:50:51.159Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DespesaEndpoints.cs",
-              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\DespesaEndpoints.cs",
-              "RelativeDocumentMoniker": "FitManager\\DespesaEndpoints.cs",
-              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\DespesaEndpoints.cs",
-              "RelativeToolTip": "FitManager\\DespesaEndpoints.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwCEAAABuAAAA",
+              "Title": "PagamentoEndpoints.cs",
+              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\PagamentoEndpoints.cs",
+              "RelativeDocumentMoniker": "FitManager\\PagamentoEndpoints.cs",
+              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\PagamentoEndpoints.cs",
+              "RelativeToolTip": "FitManager\\PagamentoEndpoints.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBQAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T23:02:45.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T23:36:44.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pagamento.cs",
+              "DocumentMoniker": "C:\\temp\\FitManager03\\FitManager\\Modelos\\Pagamento.cs",
+              "RelativeDocumentMoniker": "FitManager\\Modelos\\Pagamento.cs",
+              "ToolTip": "C:\\temp\\FitManager03\\FitManager\\Modelos\\Pagamento.cs",
+              "RelativeToolTip": "FitManager\\Modelos\\Pagamento.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T21:05:30.315Z"
             }
           ]
         }

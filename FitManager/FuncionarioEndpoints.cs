@@ -36,7 +36,6 @@ public static class FuncionarioEndpoints
             var affected = await db.Funcionario
                 .Where(model => model.FuncionarioId == funcionarioid)
                 .ExecuteUpdateAsync(setters => setters
-                    .SetProperty(m => m.FuncionarioId, funcionario.FuncionarioId)
                     .SetProperty(m => m.Nome, funcionario.Nome)
                     .SetProperty(m => m.Cargo, funcionario.Cargo)
                     .SetProperty(m => m.Salario, funcionario.Salario)

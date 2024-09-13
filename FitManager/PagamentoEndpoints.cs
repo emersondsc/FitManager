@@ -3,6 +3,7 @@ using FitManagerAPI.Data;
 using FitManagerAPI.Modelos;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.OpenApi;
+using FitManagerAPI.Requests;
 namespace FitManagerAPI;
 
 public static class PagamentoEndpoints
@@ -13,14 +14,19 @@ public static class PagamentoEndpoints
 
         group.MapGet("/", async (FitManagerAPIContext db) =>
         {
-            return await db.Pagamento.ToListAsync();
+            var pagamentos = await db.Pagamento
+            .Include(c => c.Cliente) // Carrega o Clinte para cada Pagamento
+            .ToListAsync();
+            return pagamentos;
         })
         .WithName("GetAllPagamentos")
         .WithOpenApi();
 
         group.MapGet("/{id}", async Task<Results<Ok<Pagamento>, NotFound>> (Guid pagamentoid, FitManagerAPIContext db) =>
         {
-            return await db.Pagamento.AsNoTracking()
+            return await db.Pagamento
+                .Include(c => c.Cliente) // Carrega o Clinte para cada Pagamento
+                .AsNoTracking()
                 .FirstOrDefaultAsync(model => model.PagamentoId == pagamentoid)
                 is Pagamento model
                     ? TypedResults.Ok(model)
@@ -29,12 +35,17 @@ public static class PagamentoEndpoints
         .WithName("GetPagamentoById")
         .WithOpenApi();
 
-        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (Guid pagamentoid, Pagamento pagamento, FitManagerAPIContext db) =>
+        group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (Guid pagamentoid, PagamentoRequest pagamentoRequest, FitManagerAPIContext db) =>
         {
+            var clientePagante = db.Cliente.Find(pagamentoRequest.clienteId);
+
+            var pagamento = new Pagamento(clientePagante, pagamentoRequest.dataPagamento, pagamentoRequest.valorPago,
+                pagamentoRequest.metodoPagamento, pagamentoRequest.confirmado);
+
             var affected = await db.Pagamento
                 .Where(model => model.PagamentoId == pagamentoid)
                 .ExecuteUpdateAsync(setters => setters
-                    .SetProperty(m => m.PagamentoId, pagamento.PagamentoId)
+                    
                     .SetProperty(m => m.DataPagamento, pagamento.DataPagamento)
                     .SetProperty(m => m.ValorPago, pagamento.ValorPago)
                     .SetProperty(m => m.MetodoPagamento, pagamento.MetodoPagamento)
@@ -45,8 +56,13 @@ public static class PagamentoEndpoints
         .WithName("UpdatePagamento")
         .WithOpenApi();
 
-        group.MapPost("/", async (Pagamento pagamento, FitManagerAPIContext db) =>
+        group.MapPost("/", async (PagamentoRequest pagamentoRequest, FitManagerAPIContext db) =>
         {
+            var clientePagante = db.Cliente.Find(pagamentoRequest.clienteId);
+
+            var pagamento = new Pagamento(clientePagante, pagamentoRequest.dataPagamento, pagamentoRequest.valorPago, 
+                pagamentoRequest.metodoPagamento, pagamentoRequest.confirmado);
+
             db.Pagamento.Add(pagamento);
             await db.SaveChangesAsync();
             return TypedResults.Created($"/api/Pagamento/{pagamento.PagamentoId}",pagamento);
