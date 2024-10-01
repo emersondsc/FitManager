@@ -15,7 +15,7 @@ namespace FitManagerAPI.Modelos
         public Pagamento(Cliente cliente, DateTime dataPagamento, decimal valorPago, string metodoPagamento, bool confirmado)
         {
             Cliente = cliente;
-            DataPagamento = dataPagamento;
+            DataPagamento = dataPagamento; 
             ValorPago = valorPago;
             MetodoPagamento = metodoPagamento;
             Confirmado = confirmado;

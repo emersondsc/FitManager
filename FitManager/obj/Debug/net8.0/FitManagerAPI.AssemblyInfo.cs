@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FitManagerAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb6724de1d7d081b6fa1f96d80f9c711cebf247c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ee1301e69af96e4c1c7c436ad6ad7a6f943de1c")]
 [assembly: System.Reflection.AssemblyProductAttribute("FitManagerAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FitManagerAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

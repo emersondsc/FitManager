@@ -38,6 +38,7 @@ public static class PagamentoEndpoints
         group.MapPut("/{id}", async Task<Results<Ok, NotFound>> (Guid pagamentoid, PagamentoRequest pagamentoRequest, FitManagerAPIContext db) =>
         {
             var clientePagante = db.Cliente.Find(pagamentoRequest.clienteId);
+            
 
             var pagamento = new Pagamento(clientePagante, pagamentoRequest.dataPagamento, pagamentoRequest.valorPago,
                 pagamentoRequest.metodoPagamento, pagamentoRequest.confirmado);
@@ -59,8 +60,9 @@ public static class PagamentoEndpoints
         group.MapPost("/", async (PagamentoRequest pagamentoRequest, FitManagerAPIContext db) =>
         {
             var clientePagante = db.Cliente.Find(pagamentoRequest.clienteId);
+            var dataUTC = DateTime.Now.ToUniversalTime();
 
-            var pagamento = new Pagamento(clientePagante, pagamentoRequest.dataPagamento, pagamentoRequest.valorPago, 
+            var pagamento = new Pagamento(clientePagante, dataUTC, pagamentoRequest.valorPago,
                 pagamentoRequest.metodoPagamento, pagamentoRequest.confirmado);
 
             db.Pagamento.Add(pagamento);

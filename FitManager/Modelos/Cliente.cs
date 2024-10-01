@@ -9,7 +9,6 @@ namespace FitManagerAPI.Modelos
         public string Email { get; set; }
         public string Telefone { get; set; }
         public Plano PlanoAtual { get; set; }
-        public List<Pagamento> HistoricoPagamentos { get; set; }
         public bool Ativo { get; set; }
 
         public Cliente (){}
